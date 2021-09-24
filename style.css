@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+body {
+  background: url("https://i.pinimg.com/originals/c5/9a/d2/c59ad2bd4ad2fbacd04017debc679ddb.gif");
+  background-size: cover;
+  background-position: center;
+  font-family: Poppins, sans-serif;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.back {
+  transform-origin: center top;
+  box-shadow: 0 0 5em #50bd2a;
+  z-index: 0;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80vw;
+  max-width: 800px;
+  background: black;
+  border-radius: 50px;
+  border: 10px solid #3f9b1e;
+}
+.foto {
+  animation: pisca 2s infinite;
+}
+@keyframes pisca {
+  0% {
+    box-shadow: 0 0 1em #50bd2a;
+  }
+  50% {
+    box-shadow: 0 0 2em #50bd2a;
+  }
+  100% {
+    box-shadow: 0 0 1em #50bd2a;
+  }
+}
+.foto,
+.cabeca {
+  transition: 300ms ease-in-out;
+  z-index: 1;
+  position: absolute;
+  top: 132px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50vw;
+  height: 50vw;
+  max-height: 256px;
+  max-width: 256px;
+  border-radius: 5000px;
+}
+.cabeca:hover {
+  top: 180px;
+}
+h1 {
+  color: white;
+  font-size: 25px;
+}
+h3 {
+  font-size: 30px;
+  color: white;
+  margin-top: 150px;
+}
+.nomes {
+  text-align: left;
+  padding-left: 20px;
+  color: white;
+  font-size: 15px;
+}
+.titulo {
+  text-align: left;
+  padding-left: 10px;
+  color: white;
+  font-size: 20px;
+}
+.s-titulo {
+  color: white;
+  font-size: 15px;
+}
+.ft {
+  transition: 200ms ease-in-out;
+  object-fit: cover;
+  width: 128px;
+  height: 128px;
+  border-radius: 40px;
+  background-color: #212121;
+}
+.ft:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  border-radius: 20px;
+  box-shadow: 0 0 1em #50bd2a;
+}
+.projeto {
+  align-items: top;
+  padding: 20px;
+  display: flex;
+}
